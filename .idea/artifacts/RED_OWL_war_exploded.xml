@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="RED-OWL:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/RED_OWL_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="RED-OWL/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="RED-OWL" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="mysql:mysql-connector-java:6.0.6" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
