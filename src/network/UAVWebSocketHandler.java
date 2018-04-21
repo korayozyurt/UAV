@@ -21,7 +21,7 @@ public class UAVWebSocketHandler {
     @OnOpen
     public void onOpen(Session session){
         System.out.println(session.getId() + " had opened the connection");
-        WebSocketSession.session = session;
+        WebSocketSession.sessions.add(session);
         try{
             session.getBasicRemote().sendText("Connectioon Established\n");
         } catch (IOException e) {
@@ -33,12 +33,12 @@ public class UAVWebSocketHandler {
     public void onMessage(String message, Session session){
         System.out.println("Message from " + session.getId() + ": " + message);
         try {
-            session.getBasicRemote().sendText(message);
+            if(session.isOpen())
+                session.getBasicRemote().sendText(message);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
     @OnClose
     public void onClose(Session session){

@@ -1,6 +1,7 @@
 package tools;
 
 import javax.websocket.Session;
+import java.util.ArrayList;
 
 public class WebSocketSession {
 
@@ -10,5 +11,5 @@ public class WebSocketSession {
      * implementation.
      * If just one session is here, then just last user can get the system messages.
      */
-    public static Session session;
+    public static ArrayList<Session> sessions = new ArrayList<>();
 }

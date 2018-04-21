@@ -6,6 +6,7 @@ import network.UAVWebSocketHandler;
 import tools.WebSocketSession;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.websocket.Session;
 
 public class SocketRXThread extends Thread {
 
@@ -31,7 +32,10 @@ public class SocketRXThread extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            uavWebSocketHandler.onMessage(socketRX.getData(), WebSocketSession.session);
+            for (Session session : WebSocketSession.sessions)
+                if(session != null){
+                    uavWebSocketHandler.onMessage(socketRX.getData(), session);
+                }
         }
     }
 
