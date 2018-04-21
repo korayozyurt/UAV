@@ -47,5 +47,6 @@
 
 
 <jsp:include page="${pageContext.request.contextPath}/resources/structure/footer.jsp"></jsp:include>
+<script src="${pageContext.request.contextPath}/resources/javascript/uav_web_socket.js"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 package network;
 
+import tools.Log;
 import tools.WebSocketSession;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
@@ -10,8 +12,6 @@ import java.io.IOException;
 @ServerEndpoint("/UAVWebSocketEndPoint")
 public class UAVWebSocketHandler {
 
-    public UAVWebSocketHandler() {
-    }
 
     /**
      * in the on open method, system set the static session as the
@@ -33,12 +33,11 @@ public class UAVWebSocketHandler {
     public void onMessage(String message, Session session){
         System.out.println("Message from " + session.getId() + ": " + message);
         try {
-            session.getBasicRemote().sendText("Test Message");
+            session.getBasicRemote().sendText(message);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 
 
     @OnClose

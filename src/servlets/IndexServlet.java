@@ -18,6 +18,7 @@ import java.io.IOException;
 
 @WebServlet(name = "IndexServlet", urlPatterns = {"/index"})
 public class IndexServlet extends HttpServlet {
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DatabaseHandler databaseHandler = new DatabaseHandler();
         request.getSession().setAttribute(AttributeNames.DATABASE_HANDLER,databaseHandler);
@@ -40,16 +41,29 @@ public class IndexServlet extends HttpServlet {
                  * THERE ARE THE INFORMATIONS FILL BE FILLED BY |UsER!!!!!!
                  *
                  */
+                /**
+                 * uav host addressm port number and web socket session attributes
+                 * are setted here
+                 */
                 request.getSession().setAttribute(AttributeNames.UAV_HOST_ADDRESS,"127.0.0.1");
-                request.getSession().setAttribute(AttributeNames.UAV_HOST_PORT_NUMBER,5000);
+                request.getSession().setAttribute(AttributeNames.UAV_HOST_RX_PORT_NUMBER,5000);
                 response.sendRedirect("uav_index");
             }
 
         }
     }
 
+    /**
+     *  uav Web socket handler is created because,
+     *  socket handler will set the user session by the request and
+     *  next page can use the session parameter.
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         getServletContext().getRequestDispatcher("/index.jsp").forward(request,response);
     }
 }

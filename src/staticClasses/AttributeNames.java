@@ -14,5 +14,7 @@ public class AttributeNames {
     public static final String DATABASE_HANDLER = "databaseHandler";
     public static final String WARNING_MESSAGE = "warning_message";
     public static final String UAV_HOST_ADDRESS = "uav_host_address";
-    public static final String UAV_HOST_PORT_NUMBER = "uav_host_port_number";
+    public static final String UAV_HOST_RX_PORT_NUMBER = "uav_host_rx_port_number";
+    public static final String UAV_HOST_TX_PORT_NUMBER = "uav_host_tx_port_number";
+    public static final String UAV_SOCKET_HANDLER = "uav_socket_handler";
 }
