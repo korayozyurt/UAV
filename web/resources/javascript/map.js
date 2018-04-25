@@ -2,32 +2,6 @@ var map;
 var polyPath;
 
 
-/*
-var locationFunction = function() {
-    var x = $('#x').val(),
-        y = $('#y').val();
-    $.ajax({
-        type: 'POST',
-        data: {x: x, y:y},
-        url: 'Location',
-        success: function (responseText) {
-            $("#location-ajax-message").html(responseText);
-            var numbersArray = responseText.split(" ");
-            var locations = [];
-            for (var i in numbersArray){
-                if(parseFloat(numbersArray[i].match(/(\d+)(\.\d+)?/g))){
-                    locations.push(numbersArray[i]);
-                    console.log("extracted number is: ",numbersArray[i]);
-                }
-            }
-            x = locations[0];
-            y = locations[1];
-            ihaPathAdder(x,y);
-        }
-    });
-};
-*/
-
 function uavMap(){
     var firstPoint = new google.maps.LatLng(36.981175,30.497737);
 
@@ -39,10 +13,11 @@ function uavMap(){
     };
     map = new google.maps.Map(mapCanvas,mapOptions);
 
-    flithMapSetter();
+    fligthMapSetter();
 }
 
-function flithMapSetter(){
+
+function fligthMapSetter(){
     polyPath = new google.maps.Polyline({
         strokeColor : '#FF3333',
         strokeOpacity : 1.0,
@@ -51,8 +26,8 @@ function flithMapSetter(){
     });
     polyPath.setMap(map);
 
-    var x = 36.981175;
-    var y = 30.497737;
+    var x = 37.052666;
+    var y = 30.622527;
 
     for(var i=0;i<5;i++){
         var path = polyPath.getPath();

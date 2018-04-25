@@ -27,15 +27,33 @@ public class SocketRXThread extends Thread {
 
     public void run(){
         while(true){
+
             try {
-                this.sleep(1000);
+                this.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            for (Session session : WebSocketSession.sessions)
-                if(session != null){
-                    uavWebSocketHandler.onMessage(socketRX.getData(), session);
+
+            try{
+                for (Session session : WebSocketSession.sessions){
+                    if(session != null){
+                        try{
+                            String message = socketRX.getData();
+                            uavWebSocketHandler.onMessage(message,session);
+                        }catch (Exception e){
+                            System.out.println(getClass().getName() + " has unknown problem ");
+                        }catch (Throwable e){
+                            System.out.println(getClass().getName() + " has problem threead dropped ");
+                        }
+                    }
                 }
+            }catch (Exception e){
+                System.out.println(getClass().getName() + " Exception");
+
+            }catch (Throwable e){
+                System.out.println(getClass().getName() + " Throwed");
+            }
+
         }
     }
 

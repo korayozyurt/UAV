@@ -44,4 +44,10 @@ public class UAVIndexServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/uav_index.jsp").forward(request,response);
 
     }
+
+    @Override
+    public void destroy() {
+        super.destroy();
+        socketRXThread.destroy();
+    }
 }

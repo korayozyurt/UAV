@@ -37,19 +37,15 @@
         </li>
     </ul>
 
-<form action="uav_index" method="post">
-        <input type="text" id="test">
-        <button>Test</button>
-</form>
-
     <!-- tab Panes -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade in active" id="ManuelControl">
+        <div role="tabpanel" class="tab-pane active" id="ManuelControl">
             <jsp:include page="${pageContext.request.contextPath}/resources/components/manuel_control.jsp"></jsp:include>
         </div>
 
         <div role="tabpanel" class="tab-pane fade" id="Transportation">
             <p>Transportation</p>
+            <jsp:include page="${pageContext.request.contextPath}/resources/components/transportation.jsp"></jsp:include>
         </div>
 
         <div role="tabpanel" class="tab-pane fade" id="Search">

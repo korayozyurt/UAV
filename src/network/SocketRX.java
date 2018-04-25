@@ -38,19 +38,27 @@ public class SocketRX {
 
     public String getData(){
         String message = "";
-        try{
-            while((character = inputStream.read()) != -1){
-                message += (char)character;
-                if(character == '}'){       //SPLIT JSON
-                    message = message.substring(message.indexOf('{'),message.length());
-                    //Log.insertLog(request,message);               //close for NOW!!
-                    return message;
-                }
+        while(character != -1){
+            try{
+                character = inputStream.read();
+            }catch (IOException e){
+                System.out.println("SocketRX is dropped while reading something");
+                return null;
+            }catch(Exception e){
+                System.out.println(getClass().getName().toString() + "has unknown error");
+                e.printStackTrace();
+                return null;
+            }catch(Throwable e){
+                System.out.println(getClass().getName().toString() + "SocketRX is dropped while reading something");
+                return null;
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-            Log.insertLog(request,getClass().toString() + " get Data ERROR");
+            message += (char)character;
+            if(character == '}'){       //SPLIT JSON
+                message = message.substring(message.indexOf('{'),message.length());
+                //Log.insertLog(request,message);               //close for NOW!!
+                return message;
+            }
         }
-        return "MESSAGE CANNOT FOUND!";
+        return null;
     }
 }

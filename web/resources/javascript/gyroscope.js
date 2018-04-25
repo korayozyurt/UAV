@@ -264,6 +264,19 @@ function degToRad (degrees) {
     return degrees * Math.PI / 180;
 }
 
+/*
+
+    the x and y values would be set by setX and setY functions
+
+ */
+function setX(xValue){
+    x = xValue;
+}
+
+function setY(yValue){
+    y = yValue;
+}
+
 
 function xRotateDrone(){
     x++;
