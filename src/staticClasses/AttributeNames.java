@@ -17,4 +17,5 @@ public class AttributeNames {
     public static final String UAV_HOST_RX_PORT_NUMBER = "uav_host_rx_port_number";
     public static final String UAV_HOST_TX_PORT_NUMBER = "uav_host_tx_port_number";
     public static final String UAV_SOCKET_HANDLER = "uav_socket_handler";
+    public static final String UAV_SOCKET_TX = "uav_socket_tx";
 }

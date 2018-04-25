@@ -61,6 +61,7 @@
         </div>
     </div>
 
+
 <jsp:include page="${pageContext.request.contextPath}/resources/structure/footer.jsp"></jsp:include>
 <script src="${pageContext.request.contextPath}/resources/javascript/uav_index.js"></script>
 <script src="${pageContext.request.contextPath}/resources/javascript/manuel_control.js"></script>
@@ -70,7 +71,6 @@
 <script src="${pageContext.request.contextPath}/resources/javascript/webGlUtils/util.js"></script>
 <script src="${pageContext.request.contextPath}/resources/javascript/gyroscope.js"></script>
 <script src="${pageContext.request.contextPath}/resources/javascript/uav_web_socket.js"></script>
-
 </body>
 </html>
 

@@ -20,8 +20,8 @@ public class SocketTX {
 
     public void setSocketTX(HttpServletRequest request){
         this.request = request;
-        System.out.println("host is: " + (String)request.getSession().getAttribute(AttributeNames.UAV_HOST_ADDRESS));
-        System.out.println("number is: " +(int)request.getSession().getAttribute(AttributeNames.UAV_HOST_TX_PORT_NUMBER) );
+        System.out.println("from socketTX host is: " + (String)request.getSession().getAttribute(AttributeNames.UAV_HOST_ADDRESS));
+        System.out.println("from socket TX number is: " +(int)request.getSession().getAttribute(AttributeNames.UAV_HOST_TX_PORT_NUMBER) );
         try {
             socket = new Socket((String)request.getSession().getAttribute(AttributeNames.UAV_HOST_ADDRESS),
                     (int)request.getSession().getAttribute(AttributeNames.UAV_HOST_TX_PORT_NUMBER));

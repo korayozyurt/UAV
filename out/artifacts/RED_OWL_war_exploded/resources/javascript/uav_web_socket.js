@@ -25,3 +25,14 @@ webSocket.onclose = function (ev) {
 webSocket.onerror = function (ev) {
     console.log("web socket error!");
 };
+
+
+
+//ajax post method access the SocketTXServlet
+function socketTX(message){
+    $.ajax({
+       type : 'POST',
+       url : 'SocketTX',
+       data : {message : message}
+    });
+}

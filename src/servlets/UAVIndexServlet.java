@@ -1,5 +1,6 @@
 package servlets;
 
+import network.SocketTX;
 import network.UAVWebSocketHandler;
 import staticClasses.AttributeNames;
 import thread.SocketRXThread;
@@ -31,6 +32,15 @@ public class UAVIndexServlet extends HttpServlet {
         System.out.println("from UAV host is : " + request.getSession().getAttribute(AttributeNames.UAV_HOST_ADDRESS));
         socketRXThread.setSocketRXThread(request);
         socketRXThread.start();
+
+        /**
+         * I must create a socket TX then put session Attribute
+         * then the socket is accessed from socketTXServlet
+         * socketTXServlet is called by jquery using ajax in web page.
+         */
+        SocketTX socketTX = new SocketTX();
+        socketTX.setSocketTX(request);
+        request.getSession().setAttribute(AttributeNames.UAV_SOCKET_TX,socketTX);
         getServletContext().getRequestDispatcher("/uav_index.jsp").forward(request,response);
 
     }

@@ -47,6 +47,7 @@ public class IndexServlet extends HttpServlet {
                  */
                 request.getSession().setAttribute(AttributeNames.UAV_HOST_ADDRESS,"127.0.0.1");
                 request.getSession().setAttribute(AttributeNames.UAV_HOST_RX_PORT_NUMBER,5000);
+                request.getSession().setAttribute(AttributeNames.UAV_HOST_TX_PORT_NUMBER,5001);
                 response.sendRedirect("uav_index");
             }
 
