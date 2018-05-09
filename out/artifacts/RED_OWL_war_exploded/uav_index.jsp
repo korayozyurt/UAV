@@ -27,7 +27,7 @@
             <a class="nav-link active" href="#ManuelControl" role="tab" >Manuel Control</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#Transportation" role="tab" >Transportation</a>
+            <a class="nav-link" href="#ManuelControl" role="tab" onclick="transportationClicked();" >Transportation</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#Search" role="tab" >Search</a>
@@ -43,16 +43,16 @@
             <jsp:include page="${pageContext.request.contextPath}/resources/components/manuel_control.jsp"></jsp:include>
         </div>
 
-        <div role="tabpanel" class="tab-pane fade" id="Transportation">
+        <div role="tabpanel" class="tab-pane" id="Transportation">
             <p>Transportation</p>
             <jsp:include page="${pageContext.request.contextPath}/resources/components/transportation.jsp"></jsp:include>
         </div>
 
-        <div role="tabpanel" class="tab-pane fade" id="Search">
+        <div role="tabpanel" class="tab-pane " id="Search">
 
         </div>
 
-        <div role="tabpanel" class="tab-pane fade" id="Settings">
+        <div role="tabpanel" class="tab-pane " id="Settings">
 
         </div>
     </div>

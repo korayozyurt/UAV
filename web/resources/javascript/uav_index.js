@@ -9,6 +9,10 @@ $(document).ready(function(){
     });
 });
 
+function transportationClicked(){
+    console.log("transportation is clicked");
+}
+
 
 function cameraToggle(){
     itemToggle("uav_camera");
