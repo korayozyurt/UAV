@@ -15,9 +15,9 @@
 
     <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="container">
-                <h3 class="text-muted">Welcome to Red Owl UAV Ground Control System</h3>
+                <h3 class="text-muted">Welcome to Red-Owl UAV Ground Control System</h3>
             </div>
         </div>
     </div>
@@ -44,7 +44,6 @@
         </div>
 
         <div role="tabpanel" class="tab-pane" id="Transportation">
-            <p>Transportation</p>
             <jsp:include page="${pageContext.request.contextPath}/resources/components/transportation.jsp"></jsp:include>
         </div>
 

@@ -7,15 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b47d9268-c06b-48f7-b6d2-9660da28cda6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/resources/components/settings.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/resources/css/range-round.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RED_OWL_war_exploded/resources/javascript/motor.js" afterPath="$PROJECT_DIR$/out/artifacts/RED_OWL_war_exploded/resources/javascript/motor.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RED_OWL_war_exploded/resources/javascript/uav_web_socket.js" afterPath="$PROJECT_DIR$/out/artifacts/RED_OWL_war_exploded/resources/javascript/uav_web_socket.js" />
-      <change beforePath="$PROJECT_DIR$/web/resources/components/transportation.jsp" afterPath="$PROJECT_DIR$/web/resources/components/transportation.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/resources/javascript/motor.js" afterPath="$PROJECT_DIR$/web/resources/javascript/motor.js" />
-      <change beforePath="$PROJECT_DIR$/web/resources/javascript/uav_web_socket.js" afterPath="$PROJECT_DIR$/web/resources/javascript/uav_web_socket.js" />
-      <change beforePath="$PROJECT_DIR$/web/resources/structure/header.jsp" afterPath="$PROJECT_DIR$/web/resources/structure/header.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/resources/components/settings.jsp" afterPath="$PROJECT_DIR$/web/resources/components/settings.jsp" />
       <change beforePath="$PROJECT_DIR$/web/uav_index.jsp" afterPath="$PROJECT_DIR$/web/uav_index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,9 +20,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45052242">
+    <splitter split-orientation="horizontal" split-proportion="0.50153655">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="uav_index.jsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/uav_index.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/resources/javascript/map.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -40,11 +43,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="motor.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="motor.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/resources/javascript/motor.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
+                <state relative-caret-position="609">
                   <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="settings.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/resources/components/settings.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="294">
+                  <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -53,8 +66,8 @@
           <file leaf-file-name="uav_web_socket.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/resources/javascript/uav_web_socket.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="521">
-                  <caret line="59" column="43" lean-forward="false" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+                <state relative-caret-position="714">
+                  <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -87,7 +100,7 @@
           <file leaf-file-name="manuel_control.jsp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/resources/components/manuel_control.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="291">
+                <state relative-caret-position="417">
                   <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
                   <folding />
                 </state>
@@ -157,12 +170,12 @@
         <option value="$PROJECT_DIR$/web/resources/javascript/uav_index.js" />
         <option value="$PROJECT_DIR$/web/resources/javascript/map.js" />
         <option value="$PROJECT_DIR$/web/resources/css/range-round.css" />
-        <option value="$PROJECT_DIR$/web/uav_index.jsp" />
         <option value="$PROJECT_DIR$/web/resources/structure/header.jsp" />
         <option value="$PROJECT_DIR$/web/resources/components/transportation.jsp" />
-        <option value="$PROJECT_DIR$/web/resources/components/settings.jsp" />
         <option value="$PROJECT_DIR$/web/resources/javascript/uav_web_socket.js" />
         <option value="$PROJECT_DIR$/web/resources/javascript/motor.js" />
+        <option value="$PROJECT_DIR$/web/uav_index.jsp" />
+        <option value="$PROJECT_DIR$/web/resources/components/settings.jsp" />
       </list>
     </option>
   </component>
@@ -520,12 +533,12 @@
       <workItem from="1525955966541" duration="5775000" />
       <workItem from="1525981448403" duration="6221000" />
       <workItem from="1526030070615" duration="3514000" />
-      <workItem from="1526037547677" duration="8704000" />
+      <workItem from="1526037547677" duration="9213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103382000" />
+    <option name="totallyTimeSpent" value="103891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -829,16 +842,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/components/manuel_control.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="417">
           <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/uav_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -851,26 +856,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/components/settings.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/javascript/uav_web_socket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="59" column="43" lean-forward="false" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        <state relative-caret-position="714">
+          <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/javascript/motor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="609">
           <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/components/settings.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/uav_index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding />
         </state>
       </provider>
