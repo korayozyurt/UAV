@@ -36,6 +36,12 @@ $(document).ready(function () {
         * Set the ihaPath
         */
        ihaPathAdder(gps_x,gps_y);
+
+       drawForwardLeft();
+       drawForwardRight();
+       drawBackLeft();
+       drawBackRight();
+
        console.log("web socket message is: " + message);
    };
 });

@@ -13,13 +13,16 @@ function transportationClicked(){
     console.log("transportation is clicked");
 }
 
-
 function cameraToggle(){
     itemToggle("uav_camera");
 }
 
 function mapToggle(){
     itemToggle("google-maps");
+}
+
+function motorToggle(){
+    itemToggle("motor-canvas");
 }
 
 function gyroscopeToggle(){

@@ -27,7 +27,7 @@
             <a class="nav-link active" href="#ManuelControl" role="tab" >Manuel Control</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#ManuelControl" role="tab" onclick="transportationClicked();" >Transportation</a>
+            <a class="nav-link" href="#Transportation" role="tab" onclick="transportationClicked();" >Transportation</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#Search" role="tab" >Search</a>
@@ -49,7 +49,7 @@
         </div>
 
         <div role="tabpanel" class="tab-pane " id="Search">
-
+            <jsp:include page="${pageContext.request.contextPath}/resources/components/uav_search.jsp"></jsp:include>
         </div>
 
         <div role="tabpanel" class="tab-pane " id="Settings">
@@ -67,6 +67,7 @@
 <script src="${pageContext.request.contextPath}/resources/javascript/webGlUtils/util.js"></script>
 <script src="${pageContext.request.contextPath}/resources/javascript/gyroscope.js"></script>
 <script src="${pageContext.request.contextPath}/resources/javascript/uav_web_socket.js"></script>
+<script src="${pageContext.request.contextPath}/resources/javascript/motor.js"></script>
 </body>
 </html>
 
