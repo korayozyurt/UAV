@@ -11,7 +11,6 @@
 
 <div class="row">
     <div class="col">
-        <button onclick="cameraToggle()" class="btn btn-primary">Show/Hide</button>
         <img id="uav_camera" src="192.168.1.101/8000" onerror="this.src='/../../resources/assets/no_camera_found.png'"  width="600" height="400">
     </div>
     <div class="col">

@@ -53,7 +53,7 @@
         </div>
 
         <div role="tabpanel" class="tab-pane " id="Settings">
-
+            <jsp:include page="${pageContext.request.contextPath}/resources/components/settings.jsp"></jsp:include>
         </div>
     </div>
 

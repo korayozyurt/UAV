@@ -37,10 +37,27 @@ $(document).ready(function () {
         */
        ihaPathAdder(gps_x,gps_y);
 
-       drawForwardLeft();
-       drawForwardRight();
-       drawBackLeft();
-       drawBackRight();
+       var throttleOffset = messageJson.throttleOffset;
+       var forwardLeftOffset = messageJson.forwardLeftOffset;
+       var forwardRightOffset = messageJson.forwardRightOffset;
+       var backLeftOffset = messageJson.backLeftOffset;
+       var backRightOffset = messageJson.backRightOffset;
+
+       clearCanvas();
+       if(forwardRightOffset > 0){
+           drawForwardRight();
+       }
+       if(forwardLeftOffset > 0 ){
+           drawForwardLeft();
+       }
+       if(backLeftOffset > 0){
+           drawBackLeft();
+       }
+       if(backRightOffset > 0 ){
+           drawBackRight();
+       }
+
+       writeThrottleOffset(throttleOffset);
 
        console.log("web socket message is: " + message);
    };
