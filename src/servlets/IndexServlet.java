@@ -36,16 +36,10 @@ public class IndexServlet extends HttpServlet {
             if(user.getRole() == 1){
 
                 /**
-                 *
-                 *
-                 * THERE ARE THE INFORMATIONS FILL BE FILLED BY |UsER!!!!!!
-                 *
-                 */
-                /**
                  * uav host addressm port number and web socket session attributes
                  * are setted here
                  */
-                request.getSession().setAttribute(AttributeNames.UAV_HOST_ADDRESS,"127.0.0.1");
+                request.getSession().setAttribute(AttributeNames.UAV_HOST_ADDRESS,request.getParameter(AttributeNames.UAV_HOST_ADDRESS));
                 request.getSession().setAttribute(AttributeNames.UAV_HOST_RX_PORT_NUMBER,5000);
                 request.getSession().setAttribute(AttributeNames.UAV_HOST_TX_PORT_NUMBER,5001);
                 response.sendRedirect("uav_index");

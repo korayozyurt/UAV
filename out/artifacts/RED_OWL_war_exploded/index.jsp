@@ -26,12 +26,17 @@
     <form method="post" action="index">
       <div class="form-group">
         <label for="username">Username:</label>
-        <input type="text" class="form-control" id="username" name="<%=AttributeNames.USER_NAME%>" placeholder="Username">
+        <input type="text" class="form-control" id="username" name="<%=AttributeNames.USER_NAME%>" placeholder="Username" value="kory">
       </div>
       <div class="form-group">
         <label for="password">Password:</label>
-        <input type="password" class="form-control" id="password" name="<%=AttributeNames.PASSWORD%>" placeholder="Password">
+        <input type="password" class="form-control" id="password" name="<%=AttributeNames.PASSWORD%>" placeholder="Password" value="test123">
       </div>
+
+       <div class="form-group">
+           <label for="host_address">Host Address:</label>
+           <input type="text" class="form-control" id="host_address" name="<%=AttributeNames.UAV_HOST_ADDRESS%>" placeholder="UAV Host Address" value="127.0.0.1">
+       </div>
 
       <div class="row">
         <div class="col-md-5"></div>

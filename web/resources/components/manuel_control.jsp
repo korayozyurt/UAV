@@ -1,4 +1,4 @@
-<%--
+<%@ page import="staticClasses.AttributeNames" %><%--
   Created by IntelliJ IDEA.
   User: koryOzyurt
   Date: 4/17/2018
@@ -11,11 +11,10 @@
 <div id="google-maps" style="widtd:100%; height: 400px;"></div>
 <!-- MY API KEY: AIzaSyBA8Kcc98HO7HDr2dZZ7SkhxiyOqgjQHeE -->
 
-
 <div class="row">
     <div class="col">
         <button onclick="cameraToggle()" class="btn btn-primary">Show/Hide</button>
-        <img id="uav_camera" src="192.168.1.101/8000" onerror="this.src='/../../resources/assets/no_camera_found.png'"  width="600" height="400">
+        <img id="uav_camera" src="http://<%=(String)request.getSession().getAttribute(AttributeNames.UAV_HOST_ADDRESS)%>:8000/stream.mjpg" onerror="this.src='/../../resources/assets/no_camera_found.png'"  width="600" height="400">
     </div>
     <div class="col">
         <button onclick="gyroscopeToggle()" class="btn btn-primary">Show/Hide</button>
