@@ -33,12 +33,12 @@
         <form>
             <div class="form-group">
                 <div class="mx-auto" style="width: 30px;">
-                    <input class="btn btn-primary" type="button" value="Run Motor">
+                    <input class="btn btn-primary" type="button" value="Run Motor" onclick="runMotorCommand()">
                 </div>
             </div>
             <div class="form-group">
                 <div class="mx-auto" style="width: 30px;">
-                    <input class="btn btn-primary" type="button" value="Stop Motor">
+                    <input class="btn btn-primary" type="button" value="Stop Motor" onclick="stopMotorCommand()">
                 </div>
             </div>
         </form>

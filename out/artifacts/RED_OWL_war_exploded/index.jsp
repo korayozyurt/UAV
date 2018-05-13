@@ -35,7 +35,7 @@
 
        <div class="form-group">
            <label for="host_address">Host Address:</label>
-           <input type="text" class="form-control" id="host_address" name="<%=AttributeNames.UAV_HOST_ADDRESS%>" placeholder="UAV Host Address" value="127.0.0.1">
+           <input type="text" class="form-control" id="host_address" name="<%=AttributeNames.UAV_HOST_ADDRESS%>" placeholder="UAV Host Address" value="192.168.1.106">
        </div>
 
       <div class="row">

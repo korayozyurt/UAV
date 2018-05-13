@@ -33,7 +33,6 @@ public class SocketRX {
             e.printStackTrace();
             Log.insertLog(request,getClass().toString() + " SocketRX create ERROR");
         }
-
     }
 
     public String getData(){

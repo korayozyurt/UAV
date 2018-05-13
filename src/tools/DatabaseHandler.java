@@ -27,7 +27,6 @@ public class DatabaseHandler {
 
     }
 
-
     public User getUser(String username, String password){
         this.openConnection();
         int ID, role;

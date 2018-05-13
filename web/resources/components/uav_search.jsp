@@ -1,4 +1,4 @@
-<%--
+<%@ page import="staticClasses.AttributeNames" %><%--
   Created by IntelliJ IDEA.
   User: koryOzyurt
   Date: 5/10/2018
@@ -11,7 +11,7 @@
 
 <div class="row">
     <div class="col">
-        <img src="192.168.1.101/8000" onerror="this.src='/../../resources/assets/no_camera_found.png'"  width="600" height="400">
+        <img src="http://<%=(String)request.getSession().getAttribute(AttributeNames.UAV_HOST_ADDRESS)%>:8000/stream.mjpg" onerror="this.src='/../../resources/assets/no_camera_found.png'" width="600" height="400">
     </div>
     <div class="col">
         <br><br><br><br>

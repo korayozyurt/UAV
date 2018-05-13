@@ -41,3 +41,23 @@ document.addEventListener('keydown',function(event){
     });
     message = "";
 });
+
+function runMotorCommand(){
+    message = "run_motor";
+    $.ajax({
+        type : 'POST',
+        url : 'SocketTX',
+        data : {message : message}
+    });
+    message = "";
+}
+
+function stopMotorCommand(){
+    message = "stop_motor";
+    $.ajax({
+        type : 'POST',
+        url : 'SocketTX',
+        data : {message : message}
+    });
+    message = "";
+}
