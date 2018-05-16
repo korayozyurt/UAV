@@ -21,6 +21,7 @@ public class SocketRX {
 
     }
 
+
     public void setSocketRX(HttpServletRequest request){
         this.request = request;
         System.out.println("host is: " + (String)request.getSession().getAttribute(AttributeNames.UAV_HOST_ADDRESS));

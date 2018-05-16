@@ -271,6 +271,7 @@ function degToRad (degrees) {
  */
 function setX(xValue){
     x = xValue;
+
 }
 
 function setY(yValue){

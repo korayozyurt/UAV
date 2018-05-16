@@ -23,15 +23,15 @@ $(document).ready(function () {
        var message = ev.data;
        var messageJson = JSON.parse(message);
        console.log("message json is: ", messageJson);
-       var mpu6050_x = messageJson.mpu6050_x;
-       var mpu6050_y = messageJson.mpu6050_y;
+       var xRotation = messageJson.xRotation;
+       var yRotation = messageJson.yRotation;
        var gps_x = messageJson.gps_x;
        var gps_y = messageJson.gps_y;
        /*
        * Set the x and y rotation
        * */
-       setX(mpu6050_x);
-       setY(mpu6050_y);
+       setX(xRotation);
+       setY(yRotation);
        /**
         * Set the ihaPath
         */
