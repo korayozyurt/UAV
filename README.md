@@ -1,7 +1,9 @@
 # Red-Owl-UAV
 
-Senior project with ibrahim (video processing by openCV). 
-a quadcopter based on raspberry pi and telemetry system based on java JSP.   
+Senior project with ibrahim (video processing by openCV).
+
+
+A quadcopter based on Raspberry PI and telemetry system based on java JSP.   
 > You can follow the circuit diagram  
 
 ![circuit diagram](https://github.com/koryOzyurt/Red-Owl-UAV/blob/master/report/circuit.jpg)  
