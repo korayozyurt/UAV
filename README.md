@@ -1,6 +1,6 @@
 # Red-Owl-UAV
 
-Senior project.   
+Senior project with ibrahim. 
 a quadcopter based on raspberry pi and telemetry system based on java JSP.   
 > You can follow the circuit diagram  
 
