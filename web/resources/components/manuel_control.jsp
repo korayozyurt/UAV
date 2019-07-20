@@ -9,7 +9,7 @@
 
 <button onclick="mapToggle()" class="btn btn-primary">Show/Hide</button>
 <div id="google-maps" style="widtd:100%; height: 400px;"></div>
-<!-- MY API KEY: AIzaSyBA8Kcc98HO7HDr2dZZ7SkhxiyOqgjQHeE -->
+
 
 <div class="row">
     <div class="col">
